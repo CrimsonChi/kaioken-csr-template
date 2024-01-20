@@ -8,7 +8,7 @@ export default defineConfig({
     jsxFactory: "kaioken.createElement",
     jsxFragment: "kaioken.fragment",
     loader: "tsx",
-    include: ["**/*.tsx", "**/*.ts", "**/*.jsx", "**/*.js", "**/*.svelte"],
+    include: ["**/*.tsx", "**/*.ts", "**/*.jsx", "**/*.js"],
   },
   plugins: [kaioken()],
 })
