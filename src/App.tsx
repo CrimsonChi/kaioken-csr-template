@@ -1,4 +1,5 @@
-import { Router, Route, Link, useState } from "kaioken"
+import { Router, Route, Link } from "kaioken"
+import { Counter } from "./Counter"
 
 export function App() {
   return (
@@ -22,22 +23,6 @@ export function App() {
           <Route path="/counter" element={Counter} />
         </Router>
       </main>
-    </div>
-  )
-}
-
-function Counter() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <div className="flex flex-col gap-2">
-      <p>Count: {count}</p>
-      <button
-        className="p-2 bg-blue-500 text-white"
-        onclick={() => setCount((prev) => prev + 1)}
-      >
-        Increment
-      </button>
     </div>
   )
 }
