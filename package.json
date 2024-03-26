@@ -17,6 +17,6 @@
     "vite-plugin-kaioken": "^0.0.9"
   },
   "dependencies": {
-    "kaioken": "^0.11.3"
+    "kaioken": "^0.11.4"
   }
 }
