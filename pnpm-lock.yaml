@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   kaioken:
-    specifier: ^0.13.4
-    version: 0.13.4
+    specifier: ^0.14.1
+    version: 0.14.1
 
 devDependencies:
   autoprefixer:
@@ -26,8 +26,8 @@ devDependencies:
     specifier: ^5.1.1
     version: 5.1.1
   vite-plugin-kaioken:
-    specifier: ^0.1.2
-    version: 0.1.2(kaioken@0.13.4)(vite@5.1.1)
+    specifier: ^0.2.3
+    version: 0.2.3(kaioken@0.14.1)
 
 packages:
 
@@ -757,8 +757,8 @@ packages:
     hasBin: true
     dev: true
 
-  /kaioken@0.13.4:
-    resolution: {integrity: sha512-p48XX2IPYZ83B6rjH+nPN1//pOErdFzz6vp44jXxkBdn7UnAsxzkj2XzEsziaPR+Gax3leGQKTTwDK0LvqX4YQ==}
+  /kaioken@0.14.1:
+    resolution: {integrity: sha512-A7snlv10K20WH6ru36O7SLjd0TJeaMJ4uCQbnL8u67eiTwmFq8dstuU2+jmbQZ9EBD2YYdJCBmP1xhYE+0j/ng==}
 
   /lilconfig@2.1.0:
     resolution: {integrity: sha512-utWOt/GHzuUxnLKxB6dk81RoOeoNeHgbrXiuGk4yyF5qlRz+iIVWu56E2fqGHFrXz0QNUhLB/8nKqvRH66JKGQ==}
@@ -1157,14 +1157,12 @@ packages:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
     dev: true
 
-  /vite-plugin-kaioken@0.1.2(kaioken@0.13.4)(vite@5.1.1):
-    resolution: {integrity: sha512-E/yQGMbGCyqEELr7qamcI7H91SpWH9vyFndKzyY2v1uFnuDn/bkBYaPp/AyULAOEaq144DAqNfl+l2kYh4ZlnA==}
+  /vite-plugin-kaioken@0.2.3(kaioken@0.14.1):
+    resolution: {integrity: sha512-3frovzF8l3rZhzKmHr8HdDBZsFITQU7j2s0mbrNclZ98H/uCYF6+nHPSkVeHAcrsVYpU/6pn1/MpoVQ+2qt7wQ==}
     peerDependencies:
-      kaioken: '>0.12.0'
-      vite: ^5.0.8
+      kaioken: '>=0.14.0'
     dependencies:
-      kaioken: 0.13.4
-      vite: 5.1.1
+      kaioken: 0.14.1
     dev: true
 
   /vite@5.1.1:
