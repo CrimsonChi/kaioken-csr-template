@@ -28,8 +28,8 @@ importers:
         specifier: ^5.1.1
         version: 5.1.1
       vite-plugin-kaioken:
-        specifier: ^0.5.1
-        version: 0.5.1(kaioken@0.21.1)
+        specifier: ^0.5.2
+        version: 0.5.2(kaioken@0.21.1)
 
 packages:
 
@@ -696,8 +696,8 @@ packages:
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
-  vite-plugin-kaioken@0.5.1:
-    resolution: {integrity: sha512-bCHB8yDEMqGcF3sgGlfW02KAvrrt07AM7l8z0RaXMOjYfBCIt5mU+ewFWwcu/6NrYXFqzRMsx4C0DJzQ2/Qt7g==}
+  vite-plugin-kaioken@0.5.2:
+    resolution: {integrity: sha512-f9kbPUHJZNX2YyLjt49u66ox/oFs1H89iwVbYlS1qsSe6GB1cRKHXl+8ZBhd6F20iPsFER/dcB+fp+rrPoFVtg==}
     peerDependencies:
       kaioken: '>=0.21.1'
 
@@ -1326,7 +1326,7 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  vite-plugin-kaioken@0.5.1(kaioken@0.21.1):
+  vite-plugin-kaioken@0.5.2(kaioken@0.21.1):
     dependencies:
       kaioken: 0.21.1
 
