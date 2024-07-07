@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       kaioken:
-        specifier: ^0.21.1
-        version: 0.21.1
+        specifier: ^0.21.2
+        version: 0.21.2
     devDependencies:
       autoprefixer:
         specifier: ^10.4.17
@@ -29,7 +29,7 @@ importers:
         version: 5.1.1
       vite-plugin-kaioken:
         specifier: ^0.5.2
-        version: 0.5.2(kaioken@0.21.1)
+        version: 0.5.2(kaioken@0.21.2)
 
 packages:
 
@@ -468,8 +468,8 @@ packages:
     resolution: {integrity: sha512-gFqAIbuKyyso/3G2qhiO2OM6shY6EPP/R0+mkDbyspxKazh8BXDC5FiFsUjlczgdNz/vfra0da2y+aHrusLG/Q==}
     hasBin: true
 
-  kaioken@0.21.1:
-    resolution: {integrity: sha512-VtM7GUu5hl62YaJitihUIAIGCiWwNRxvpW4KzA84+XBgrkpPomL3gt0huYuCNe9FCSIDqit5l5HSRBoX5HvmGg==}
+  kaioken@0.21.2:
+    resolution: {integrity: sha512-jLMHaP6EPaOfvygcM2pp6//2nIOUX/j0zwCEbbAhicoHTSm7o2TgFM34c1xe3TPFB5T0ZC5/Pn65f4RgGgtJow==}
 
   lilconfig@2.1.0:
     resolution: {integrity: sha512-utWOt/GHzuUxnLKxB6dk81RoOeoNeHgbrXiuGk4yyF5qlRz+iIVWu56E2fqGHFrXz0QNUhLB/8nKqvRH66JKGQ==}
@@ -1097,7 +1097,7 @@ snapshots:
 
   jiti@1.21.0: {}
 
-  kaioken@0.21.1: {}
+  kaioken@0.21.2: {}
 
   lilconfig@2.1.0: {}
 
@@ -1326,9 +1326,9 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  vite-plugin-kaioken@0.5.2(kaioken@0.21.1):
+  vite-plugin-kaioken@0.5.2(kaioken@0.21.2):
     dependencies:
-      kaioken: 0.21.1
+      kaioken: 0.21.2
 
   vite@5.1.1:
     dependencies:
