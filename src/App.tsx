@@ -16,11 +16,9 @@ export function App() {
         <Router>
           <Route
             path="/"
-            element={() => (
-              <div className="text-xl font-bold">Hello world!</div>
-            )}
+            element={<div className="text-xl font-bold">Hello world!</div>}
           />
-          <Route path="/counter" element={Counter} />
+          <Route path="/counter" element={<Counter />} />
         </Router>
       </main>
     </div>
