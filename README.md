@@ -1,4 +1,3 @@
-Get started by running
+Welcome to your new Kaioken CSR project!
 
-- pnpm i
-- pnpm dev
+Visit [https://kaioken.dev](https://kaioken.dev) for more information.
