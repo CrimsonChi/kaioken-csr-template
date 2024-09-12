@@ -7,6 +7,32 @@ export default {
         primary: "rgb(220, 20, 60)",
         "primary-light": "rgb(228 50 86)",
       },
+      keyframes: {
+        "fade-in-up": {
+          "0%": {
+            opacity: 0,
+            transform: "translate3d(0, 10%, 0)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translate3d(0, 0, 0)",
+          },
+          "fade-in-right": {
+          "0%": {
+            opacity: 0,
+            transform: "translate3d(10%, 0, 0)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translate3d(0, 0, 0)",
+          }
+          },
+        },
+      },
+      animation: {
+        "fade-in-up": "fade-in-up .5s ease-in-out",
+        "fade-in-right": "fade-in-right .5s ease-in-out",
+      },
     },
   },
   plugins: [],
