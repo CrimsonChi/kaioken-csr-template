@@ -34,7 +34,7 @@ type LandingCardProps = {
 function LandingCard({ iconSrc, text }: LandingCardProps) {
   return (
     <div className="flex flex-col md:basis-1/4 flex-grow items-center text-center gap-4 rounded-xl border border-white border-opacity-5 bg-white bg-opacity-5 p-6 shadow-lg backdrop-blur-md">
-      <img src={iconSrc} className="w-12 h-12 opacity-60" alt="Route" />
+      <img src={iconSrc} className="w-12 h-12 opacity-60" alt={text} />
       <p className="text-lg font-thin">{text}</p>
     </div>
   )
