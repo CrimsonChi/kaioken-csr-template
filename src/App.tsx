@@ -1,12 +1,12 @@
-import { Router, Route, Link } from "kaioken"
 import { Counter } from "./components/Counter"
 import { Landing } from "./components/Landing"
 
-
 export function App() {
   return (
-    <div className="text-center animate-fade-in-up">
-      <p className="text-3xl font-bold mb-24 text-center">react but <s>better</s> worse</p>
+    <div className="min-h-screen flex flex-col gap-20 justify-between px-10 py-20">
+      <h1 className="text-3xl md:text-5xl leading-10 font-bold text-center">
+        Welcome to your Kaioken CSR app!
+      </h1>
       <Counter />
       <Landing />
     </div>

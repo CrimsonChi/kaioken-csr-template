@@ -1,44 +1,36 @@
-import { useState, useEffect, useRef } from "kaioken";
+import { useState, useRef, useCallback } from "kaioken"
 
 export function Counter() {
-  const [count, setCount] = useState(0);
-  const [animate, setAnimate] = useState(false);
-  const countRef = useRef(null);
+  const countRef = useRef<HTMLDivElement>(null)
+  const animRef = useRef<Animation>()
+  const [count, setCount] = useState(0)
 
-  function reset_animation() {
-    var el = document.getElementById('counter')!;
-    el.style.animation = 'none';
-    el.offsetHeight; /* trigger reflow */
-    el.style.animation = null!;
-  }
+  const handleClick = useCallback(() => {
+    if (!countRef.current) return
+    setCount((prev) => prev + 1)
 
-  useEffect(() => {
-    if (countRef.current) {
-      setAnimate(true);
-      const timer = setTimeout(() => setAnimate(false), 500);
-      return () => clearTimeout(timer);
-    }
-  }, [count]);
+    animRef.current?.finish()
+    animRef.current = countRef.current.animate(
+      [{ transform: "scale(2.5)" }, { transform: "scale(1)" }],
+      {
+        duration: 300,
+        iterations: 1,
+      }
+    )
+  }, [countRef.current])
 
   return (
-    <div className="flex justify-center items-center">
-      <img
-        src="/favicon.svg"
-        className="w-32 h-32 animate-pulse cursor-pointer"
-        alt="kaioken logo"
-        onclick={() => {
-          setCount(count + 1);
-          setAnimate(true);
-          reset_animation();
-        }}
-      />
-      <p
-        id="counter"
-        ref={countRef}
-        className={`${animate ? 'animate-punch-in' : ''}`}
-      >
+    <div className="flex flex-col gap-8 justify-center items-center">
+      <button type="button" onclick={handleClick} className="cursor-pointer ">
+        <img
+          src="/favicon.svg"
+          className="w-32 h-32 animate-pulse"
+          alt="kaioken logo"
+        />
+      </button>
+      <span ref={countRef} className="text-4xl font-medium select-none">
         {count}
-      </p>
+      </span>
     </div>
-  );
+  )
 }
