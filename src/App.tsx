@@ -1,5 +1,4 @@
 import { Counter } from "./components/Counter"
-import { Landing } from "./components/Landing"
 
 export function App() {
   return (
@@ -8,7 +7,14 @@ export function App() {
         Welcome to your Kaioken CSR app!
       </h1>
       <Counter />
-      <Landing />
+      <div className="flex justify-center">
+        <span className="text-stone-200">
+          Learn at{" "}
+          <a href="https://kaioken.dev" target="_blank" className="underline">
+            kaioken.dev
+          </a>
+        </span>
+      </div>
     </div>
   )
 }
