@@ -1,5 +1,4 @@
 import { useRef, useCallback, signal } from "kaioken"
-import { count } from "./count"
 
 export function Counter() {
   const count = signal(0)
