@@ -9,14 +9,14 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.8",
-    "postcss": "^8.5.4",
-    "tailwindcss": "^4.1.8",
+    "@tailwindcss/postcss": "^4.1.10",
+    "postcss": "^8.5.5",
+    "tailwindcss": "^4.1.10",
     "typescript": "^5.8.3",
     "vite": "^6.3.5",
-    "vite-plugin-kaioken": "0.20.2"
+    "vite-plugin-kaioken": "0.20.3"
   },
   "dependencies": {
-    "kaioken": "0.40.3"
+    "kaioken": "0.40.4"
   }
 }
