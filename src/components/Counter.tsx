@@ -1,4 +1,4 @@
-import { useRef, useSignal } from "kaioken"
+import { useRef, useSignal } from "kiru"
 
 export function Counter() {
   const count = useSignal(0)
